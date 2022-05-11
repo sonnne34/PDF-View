@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/pdfFragment">
+    <fragment
+        android:id="@+id/pdfFragment"
+        android:name="com.template.PdfFragment"
+        android:label="@string/app_name" >
+        <action
+            android:id="@+id/action_pdfFragment_to_aboutUsFragment"
+            app:destination="@id/aboutUsFragment"
+            app:popUpTo="@id/pdfFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.template.AboutUsFragment"
+        android:label="@string/action_about_us" />
+</navigation>
