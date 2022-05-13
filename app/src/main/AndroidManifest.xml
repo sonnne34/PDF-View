@@ -16,6 +16,7 @@
         <activity
             android:name=".MenuActivity"
             android:exported="false"
+            android:screenOrientation="landscape"
             android:label="@string/title_activity_menu"
             android:theme="@style/Theme.Contentlist_v1.NoActionBar" />
         <activity
